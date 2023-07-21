@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #90b454;
+}
+
+text {
+  font-family: "Princess Sofia", cursive;
+}
+
+h1 {
+  font-family: "Princess Sofia", cursive;
+  padding: 2%;
+  color: #6f7303;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+  font-size: 40px;
+}
+
+p {
+  padding: 5%;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+
+.icon {
+  width: 40%;
+  padding: 5%;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.iconline {
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #90b454;
+  background-color: #394002;
+  padding: 2%;
+  font-family: "Princess Sofia", cursive;
+  position: sticky;
+  top: 0;
+}
+
+#nav h1 {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  height: 50vh;
+  background-image: url(./images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#herotext {
+  font-size: 120px;
+  font-weight: lighter;
+  text-align: center;
+  color: #394002;
+  vertical-align: middle;
+  padding: 30px;
+  font-family: "Princess Sofia", cursive;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#features {
+  background-image: url("./images/tornpaper.png");
+  background-position: top;
+  background-size: cover;
+  height: 115vh;
+  padding: 1vw;
+}
+
+#features .image-container {
+  display: flex;
+  align-items: center;
+  height: 40%;
+}
+
+#features p {
+  margin: 0 auto;
+}
+
+#about p {
+  margin: 0 auto;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.photogall {
+  padding: 0.5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.photo {
+  width: 30vw;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+#gallery {
+  padding: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  #header {
+    height: 20vh;
+  }
+
+  #herotext {
+    font-size: 50px;
+    padding: 20px;
+  }
+
+  #features {
+    background-image: url("./images/tornmoblie.png");
+    background-size: 160%;
+    background-repeat: no-repeat;
+    height: 165vh;
+    padding: 1vw;
+  }
+
+  .icon {
+    width: 30vw;
+    padding: 5%;
+  }
+
+  .iconline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-size: calc(35px + 0.390625vw);
+  }
+
+  .photogall {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 85vw;
+  }
+
+  #about p {
+    margin: 0;
+    padding: 7vw;
+    box-sizing: border-box;
+  }
+}
